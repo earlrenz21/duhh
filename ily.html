@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Test</title>
+    <style>
+        body {
+            background-color: #f8e5e5;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #e44d26;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+        button {
+            background-color: #e44d26;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function showSecretMessage(choice) {
+            var message = "";
+
+            if (choice === 'yes') {
+                message = "Hehe, I love you more my baby, Deserve nmog Hug and Kiss My Baby Danica Mwaaaa 😙 . "; 
+            } else if (choice === 'no') {
+                message = "Ngeeeee, cge ddto nalang ka, mas better bitaw nang uban, ddto nalang kas mga guys nga dagkog biceps tas naa pay mas pogi pa kesa sa ako :( )";
+            } else {
+                message = "Invalid choice. Please choose 'yes' or 'no'.";
+            }
+
+            document.getElementById('secretMessage').innerHTML = message;
+        }
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Babeee, Do u Still Love Me ☹️ ?</h1>
+        <p>Choose one:</p>
+        <button onclick="showSecretMessage('yes')">Yes</button>
+        <button onclick="showSecretMessage('no')">No</button>
+        <p id="secretMessage"></p>
+    </div>
+</body>
+</html>
